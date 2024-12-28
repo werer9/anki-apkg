@@ -2,8 +2,8 @@ import * as Database from 'better-sqlite3'
 import { join } from 'path'
 import { initDatabase, insertCard } from './sql'
 import { writeFileSync, mkdirSync, rmdirSync, createWriteStream } from 'fs'
-import * as rimraf from 'rimraf'
 import * as archiver from 'archiver'
+import { rimraf } from 'rimraf'
 
 export class APKG {
   private db: any
@@ -46,6 +46,6 @@ export class APKG {
     archive.on('end', this.clean.bind(this))
   }
   private clean() {
-    rimraf(this.dest, () => {})
+    rimraf(this.dest).then(r => {})
   }
 }

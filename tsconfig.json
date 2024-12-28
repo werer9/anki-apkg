@@ -1,9 +1,15 @@
 {
   "compilerOptions": {
-    "module": "es6",
-    "target": "es6",
+    "target": "ES2022",
+    "lib": ["es2022"],
+    "types": ["node"],
+    "module": "esnext",
+    "skipLibCheck": true,
     "removeComments": true,
     "moduleResolution": "node",
-    "sourceMap": true
-  }
+    "sourceMap": true,
+    "allowJs": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "lib"]
 }
