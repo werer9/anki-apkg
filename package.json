@@ -1,20 +1,20 @@
 {
   "name": "anki-apkg",
-  "version": "0.0.7",
+  "version": "0.0.4",
   "main": "lib/index.js",
   "types": "lib/typings.d.ts",
-  "repository": "git@github.com:werer9/anki-apkg.git",
+  "repository": "git@github.com:NdYAG/anki-apkg.git",
   "author": "NdYAG <i@daix.me>",
   "license": "MIT",
   "scripts": {
-    "start": "tsc --outDir lib src/*.ts && cp src/typings.d.ts lib",
+    "start": "tsc --declaration --outDir lib src/*.ts && cp src/typings.d.ts lib",
     "prepare": "npm run start"
   },
   "dependencies": {
-    "@types/node": "^22.10.2",
-    "archiver": "^7.0.1",
+    "@types/node": "^9.4.6",
+    "archiver": "^5.3.1",
     "better-sqlite3": "^11.7.0",
-    "rimraf": "^2.0.1",
+    "rimraf": "^2.6.2",
     "sha1": "^1.1.1"
   }
 }
