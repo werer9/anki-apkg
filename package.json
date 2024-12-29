@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "tsc --outDir lib src/*.ts && cp src/typings.d.ts lib",
-    "prepublish": "npm run start"
+    "prepare": "npm run start"
   },
   "dependencies": {
     "@types/node": "^22.10.2",
