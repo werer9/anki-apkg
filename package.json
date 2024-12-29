@@ -1,6 +1,6 @@
 {
   "name": "anki-apkg",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "main": "lib/index.js",
   "types": "lib/typings.d.ts",
   "repository": "git@github.com:werer9/anki-apkg.git",
